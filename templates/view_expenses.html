@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %}
+<div class="table-container">
+    <h2>All Expenses</h2>
+    {% if expenses %}
+    <table class="table table-hover table-striped">
+        <tr>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+        {% for expense in expenses %}
+        <tr>
+            <td>{{ expense.description }}</td>
+            <td>${{ "%.2f"|format(expense.amount) }}</td>
+            <td>{{ expense.category }}</td>
+            <td>{{ expense.date.strftime('%Y-%m-%d') }}</td>
+            <td>
+                <form method="POST" action="{{ url_for('delete_expense', expense_id=expense.id) }}">
+                    {{ csrf_token() }}
+                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No expenses added yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

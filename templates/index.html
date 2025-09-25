@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block content %}
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>💰 Welcome to Expense Tracker</h1>
+        <p>Track your daily expenses, manage your budget, and take control of your finances with ease.</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('login') }}" class="btn-primary">Login</a>
+            <a href="{{ url_for('register') }}" class="btn-secondary">Register</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

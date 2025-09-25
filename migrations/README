@@ -1,0 +1,25 @@
+Single-database configuration for Flask.
+🚀 Features
+
+✅ User Authentication – Register & Login with secure password hashing
+✅ Add Expenses – Record expenses with amount, category, description & date
+✅ View Dashboard – See your total spending and recent expenses
+✅ Delete Expenses – Remove incorrect or old entries
+✅ Responsive UI – Clean & modern interface with Bootstrap
+✅ SQLite Database – Simple and lightweight storage
+✅ CSRF Protection – Secure forms with Flask-WTF
+
+
+
+
+🛠 Tech Stack
+
+Backend: Python (Flask)
+
+Database: SQLite (via Flask-SQLAlchemy)
+
+Authentication: Flask-Login
+
+Forms & Validation: Flask-WTF
+
+Frontend: HTML, CSS (Bootstrap), Jinja2 Templates

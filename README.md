@@ -19,4 +19,13 @@ This project is designed to promote better money management by providing clear i
 - **Backend:** Python (Flask) 
 - **Database:** SQLite
 
+  
+----
+
+## 🎯 Future Enhancements
+- ✅ Password reset via email/OTP  
+- 🔒 Two-factor authentication  
+- 📑 Export data as PDF/CSV  
+- 📱 Mobile app version  
+- 🤖 AI-based spending insights  
 
